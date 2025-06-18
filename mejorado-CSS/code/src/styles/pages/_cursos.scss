@@ -1,0 +1,91 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.main-cursos {
+    text-align: center;
+    margin: 0 16px;
+    h2,h3 {
+        color: $brand-color;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    &-hero{
+        h2 {
+            margin: 0;
+        }
+        p {
+            margin: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+        article{
+            figure{
+                width: 100%;
+                max-width: 300px;
+                margin: 0 auto;
+                img{
+                    width: 100%;
+                    height: auto;
+                    border-radius: 10px;
+                }
+            }
+            display: flex;
+            .cursos-text{
+            padding: 0 10px;
+            margin-bottom: 30px;
+            text-align: start;
+            }
+            h3 {
+                color: $brand-color;
+                margin: 0;
+                font-size: 18px;
+            }
+            p {
+                margin: 0;
+                padding-bottom: 10px;
+                font-size: 15px;
+            }
+        }
+}
+
+.main-curso1, .main-curso2{
+    margin: 0 16px;
+    h1,h2,h3 {
+        color: $brand-color;
+        margin: 0;
+        text-align: center;
+    }
+    &-curso{
+        figure{
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+            img{
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+        }
+        p{
+            margin-bottom: 40px;
+        }
+    }
+
+    &-profesor{
+        figure {
+            width: 50%;
+            margin: 0 auto;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        .tips-equipo {
+            p{
+                margin: 0;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

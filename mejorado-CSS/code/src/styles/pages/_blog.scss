@@ -1,0 +1,46 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.main-blog{
+    margin: 0 16px;
+    text-align: center;
+    h2,h3{
+        margin: 0;
+        color: $brand-color;
+    }
+    h2{
+        margin-bottom: 30px;
+    }
+    article{
+        margin-bottom: 50px;
+    }
+    figure{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 800px;
+        img{
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    }
+}
+
+.main-noticia{
+    margin: 0 16px;
+    text-align: center;
+    h2,h3{
+        margin: 0;
+        color: $brand-color;
+    }
+    figure{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 800px;
+        img{
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    }
+}

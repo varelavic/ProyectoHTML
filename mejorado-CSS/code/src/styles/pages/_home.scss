@@ -1,0 +1,152 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.main-home {
+    padding: 0 10px;
+    &-hero{
+        text-align: center;
+        h1 {
+            color: $brand-color;
+            margin: 0;
+            line-height: normal;
+        }
+        p{
+            margin-bottom: 10px;
+        }
+        figure {
+            position: relative;
+            figcaption {
+                font-size: 0.8em;
+                color: $brand-color;
+                position: absolute;
+                bottom: 10px;
+                right: 0;
+            }
+            img {
+                width: 100%;
+                max-width: 800px;
+                height: auto;
+                border-radius: 10px;
+            }
+        }
+    }
+    &-empresa{
+        text-align: center;
+        margin: 20px 0;
+        h2 {
+            color: $brand-color;
+            margin-bottom: 10px;
+        }
+        .button {
+            width: 200px;
+        }
+    }
+
+    &-cursos{
+        text-align: center;
+        margin: 20px 0;
+        h2 {
+            color: $brand-color;
+            margin: 0;
+        }
+        p {
+            margin: 0;
+            margin-bottom: 20px;
+        }
+
+        article{
+            figure{
+                width: 100%;
+                max-width: 300px;
+                margin: 0 auto;
+                img{
+                    width: 100%;
+                    height: auto;
+                    border-radius: 10px;
+                }
+            }
+            display: flex;
+            .cursos-text{
+            padding: 0 10px;
+            margin-bottom: 30px;
+            text-align: start;
+            }
+            h3 {
+                color: $brand-color;
+                margin: 0;
+                font-size: 18px;
+            }
+            p {
+                margin: 0;
+                padding-bottom: 10px;
+                font-size: 15px;
+            }
+        }
+    }
+
+    &-equipo{
+        text-align: center;
+        margin: 20px 0;
+        h2 {
+            color: $brand-color;
+            margin-bottom: 10px;
+        }
+        figure {
+            width: 100%;
+            height: auto;
+            img {
+                width: 100%;
+                max-width: 600px;
+                height: auto;
+                border-radius: 10px;
+            }
+        }
+        p {
+            margin: 10px 0;
+        }
+        .button {
+            width: 200px;
+        }
+    }
+
+    &-noticias{
+        text-align: center;
+        margin: 20px 0;
+        h2 {
+            color: $brand-color;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        p {
+            margin: 0;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        article {
+            figure {
+                width: 100%;
+                height: auto;
+                img {
+                    width: 100%;
+                    max-width: 600px;
+                    height: auto;
+                    border-radius: 10px;
+                }
+            }
+            h3 {
+                color: $brand-color;
+                margin: 0;
+                font-size: 20px;
+            }
+            p {
+                margin: 0;
+                padding-bottom: 10px;
+                font-size: 15px;
+            }
+            .button {
+                width: 200px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

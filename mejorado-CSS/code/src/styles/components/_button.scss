@@ -1,0 +1,9 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+.button {
+    @include mixins.button();
+}

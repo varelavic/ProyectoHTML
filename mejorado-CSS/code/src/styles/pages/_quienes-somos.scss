@@ -1,0 +1,40 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.main-equipo {
+    margin: 0 16px;
+    h1,h2,h3{
+        color: $brand-color;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    h3 {
+        margin: 0;
+    }
+    p {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    figure {
+        width: 50%;
+        margin: 0 auto;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    h3 {
+        text-align: center;
+    }
+
+    .tips-equipo {
+        h3{
+            margin: 0;
+        }
+    }
+
+    article {
+        margin-bottom: 40px;
+    }
+}

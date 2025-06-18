@@ -1,0 +1,55 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.main-registro {
+    margin: 0 16px;
+    h3 {
+        margin: 0;
+        color: $brand-color;
+        text-align: center;
+    }
+    form{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid black;
+            font-size: 16px;
+            &:focus {
+                border-color: $brand-color;
+                outline: none;
+            }
+        }
+
+        button {
+            background-color: $brand-color;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            &:hover {
+                background-color: darken($brand-color, 10%);
+            }
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid black;
+            font-size: 16px;
+            resize: vertical;
+            &:focus {
+                border-color: $brand-color;
+                outline: none;
+            }
+        }
+    }
+}
