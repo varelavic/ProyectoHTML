@@ -67,9 +67,10 @@
             }
             display: flex;
             .cursos-text{
-            padding: 0 10px;
-            margin-bottom: 30px;
-            text-align: start;
+                width: 50%;
+                padding: 0 10px;
+                margin-bottom: 30px;
+                text-align: start;
             }
             h3 {
                 color: $brand-color;
@@ -146,6 +147,34 @@
             .button {
                 width: 200px;
                 margin-bottom: 30px;
+            }
+        }
+    }
+
+    @include respond-to('large'){
+        .main-home {
+            &-cursos{
+                .cursos {
+                    display: flex;
+                    justify-content: center;
+                    gap: 100px;
+                    article {
+                        flex-direction: column;
+                        .cursos-text {
+                            width: 100%;
+                        }
+                    }
+                }
+                p.fin{
+                    margin-bottom: 80px;
+                }
+            }
+
+            &-noticias{
+                p{
+                    max-width: 80%;
+                    margin: auto auto;
+                }
             }
         }
     }
